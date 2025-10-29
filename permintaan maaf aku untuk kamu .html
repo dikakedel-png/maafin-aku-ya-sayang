@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Maaf dari Hati ❤️</title>
+    <style>
+        /* ======================================= */
+        /* CSS UNTUK ANIMASI LATAR BELAKANG */
+        /* ======================================= */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #4a4a4a;
+            text-align: center;
+            padding: 50px;
+            overflow: hidden; /* Penting agar hati tidak membuat scrollbar */
+            margin: 0; /* Hilangkan margin default body */
+            min-height: 100vh; /* Pastikan body setidaknya setinggi viewport */
+            display: flex; /* Gunakan flexbox untuk centering konten */
+            flex-direction: column;
+            justify-content: center; /* Posisikan konten di tengah vertikal */
+            align-items: center; /* Posisikan konten di tengah horizontal */
+            position: relative; /* Untuk penempatan hati secara absolut */
+
+            /* Gradient Latar Belakang */
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb); 
+            background-size: 400% 400%;
+            animation: colorChange 15s ease infinite; 
+        }
+
+        @keyframes colorChange {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ======================================= */
+        /* CSS UNTUK ANIMASI HATI (HEARTBEAT) */
+        /* ======================================= */
+        .heart-beat { /* Mengganti nama kelas agar tidak bentrok dengan hati jatuh */
+            color: #d9534f;
+            font-size: 40px;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        /* ======================================= */
+        /* CSS UNTUK HUJAN HATI */
+        /* ======================================= */
+        .falling-heart {
+            position: absolute;
+            top: -50px; /* Mulai dari atas layar */
+            font-size: 20px; /* Ukuran hati */
+            color: rgba(255, 0, 0, 0.7); /* Warna hati semi-transparan */
+            animation: fall linear infinite; /* Animasi jatuh */
+            opacity: 0; /* Awalnya sembunyikan */
+            pointer-events: none; /* Agar tidak menghalangi klik */
+            z-index: 0; /* Pastikan hati di belakang konten utama */
+        }
+
+        /* Keyframes untuk animasi jatuh */
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1; /* Muncul setelah mulai jatuh */
+            }
+            100% {
+                transform: translateY(100vh) translateX(var(--translateX)) rotate(var(--rotate)); /* Jatuh sampai bawah, sedikit ke samping, dan berputar */
+                opacity: 0; /* Hilang saat mencapai bawah */
+            }
+        }
+
+        /* ======================================= */
+        /* CSS UTAMA (Konten Surat) */
+        /* ======================================= */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto; /* Untuk centering jika flexbox tidak dipakai */
+            position: relative; /* Agar z-index bekerja dengan baik */
+            z-index: 1; /* Pastikan konten utama di atas hati jatuh */
+        }
+
+        h1 {
+            color: #d9534f;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #449d44;
+        }
+
+        .note {
+            margin-top: 30px;
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Untuk PEACQUY SAYANG, Maafin Aku <span class="heart-beat">❤️</span></h1>
+        
+        <p>
+            Sayang, aku tahu aku udah membuat kesalahan. Aku bener" ngerasa salah sama perilaku aku.
+        </p>
+
+        <p>
+            Tidak ada kata yang bisa menggambarkan betapa aku peduli padamu. mau kapan pun dan dimanapun aku tetep milih kamu , bukan karna alasan apapun tapi karna aku sayang sama kamu , seriusan deh , Kamu adalah segalanya bagiku, dan menyakitimu adalah hal terakhir yang aku inginkan.
+        </p>
+
+        <p>
+            Aku janji akan berusaha lebih baik, lebih mendengarkan, dan lebih menghargai perasaanmu. Tolong beri aku kesempatan untuk membuktikan ketulusanku.
+        </p>
+        
+        <p>
+            maafin aku untuk akhir" ini aku ga kaya biasanya, aku lagi dibawah banget posisinya dan aku mikir jadi ga berguna juga buat kamu harus nya aku yg ngelakuin ini itu jadi malah kamu , maafin aku yaa,  kamu banyak banget wasting money , time , dan lain" , aku janji sayang ketika aku di atas aku akan buat kamu seneng dan bahagia , dan bales semua effort kamu unntuk aku , jadi maaf ya sayang dan tolong bersabar dulu dengan proses aku dan tolong pertahinin hubungan kita juga ya 
+        </p>
+
+        <a href="https://wa.me/[+62 87883974398]?text=Aku%20mengerti%20dan%20aku%20maafkan%20kamu%2C%20Sayang!%20" class="button">Klik jika kamu mau memaafkan aku</a>
+
+        <div class="note">
+            Aku mencintaimu, sekarang dan selamanya. <br>
+            Dari, aku yang sayang sama kamu
+        </div>
+
+    </div>
+
+    <script>
+        const body = document.body;
+        const numHearts = 30; // Jumlah hati yang ingin kamu jatuhkan
+        const colors = ['#FF4081', '#E91E63', '#F48FB1', '#FFC107', '#FFEB3B']; // Warna hati
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('falling-heart');
+            heart.textContent = '❤️'; // Karakter hati
+
+            // Posisi awal hati secara acak di lebar layar
+            heart.style.left = Math.random() * 100 + 'vw'; 
+            
+            // Pilih warna acak dari array colors
+            heart.style.color = colors[Math.floor(Math.random() * colors.length)];
+
+            // Ukuran hati acak
+            heart.style.fontSize = Math.random() * 15 + 15 + 'px'; // Antara 15px dan 30px
+
+            // Durasi jatuh acak
+            const duration = Math.random() * 5 + 5; // Antara 5s dan 10s
+            heart.style.animationDuration = duration + 's';
+
+            // Delay animasi acak agar tidak jatuh bersamaan
+            heart.style.animationDelay = Math.random() * numHearts * 0.1 + 's';
+
+            // Variabel CSS kustom untuk pergerakan ke samping dan rotasi
+            const translateX = (Math.random() - 0.5) * 200 + 'px'; // Bergerak ke kiri/kanan acak
+            const rotate = Math.random() * 360 + 'deg'; // Rotasi acak
+            heart.style.setProperty('--translateX', translateX);
+            heart.style.setProperty('--rotate', rotate);
+
+            body.appendChild(heart);
+
+            // Hapus hati setelah selesai animasi untuk efisiensi
+            heart.addEventListener('animationend', () => {
+                heart.remove();
+                // Opsional: Buat hati baru setelah hati lama hilang
+                // createHeart(); 
+            });
+        }
+
+        // Buat sejumlah hati di awal
+        for (let i = 0; i < numHearts; i++) {
+            createHeart();
+        }
+
+        // Terus membuat hati baru secara berkala
+        // setInterval(createHeart, 500); // Setiap 0.5 detik, hati baru muncul
+    </script>
+
+</body>
+</html>
